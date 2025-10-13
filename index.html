@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pierre-Paul G. - Developer Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar" role="navigation" aria-label="Main navigation">
+        <div class="nav-container">
+            <h1 class="logo">Pierre-Paul G.</h1>
+            <div class="nav-right">
+                <ul class="nav-menu">
+                    <li><a href="#about" data-en="About" data-fr="À propos" aria-label="Navigate to about section">About</a></li>
+                    <li><a href="#skills" data-en="Skills" data-fr="Compétences" aria-label="Navigate to skills section">Skills</a></li>
+                    <li><a href="#projects" data-en="Projects" data-fr="Projets" aria-label="Navigate to projects section">Projects</a></li>
+                </ul>
+                <div class="language-toggle">
+                    <button id="langBtn" class="lang-btn" aria-label="Switch between English and French">
+                        <span class="lang-text">FR</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <section id="about" class="section about-section" aria-labelledby="about-title">
+        <div class="container">
+            <h2 id="about-title" class="section-title" data-en="About Me" data-fr="À propos de moi">About Me</h2>
+            <div class="about-content">
+                <div class="about-card">
+                    <p class="about-text" data-en="Hi! I'm a passionate developer who loves creating innovative solutions. I specialize in building web applications, software, and mobile apps that solve real-world problems. With a strong foundation in multiple programming languages and frameworks, I'm always excited to take on new challenges." 
+                       data-fr="Bonjour! Je suis un développeur passionné qui aime créer des solutions innovantes. Je me spécialise dans la création d'applications web, de logiciels et d'applications mobiles qui résolvent des problèmes concrets. Avec une base solide dans plusieurs langages de programmation et frameworks, je suis toujours enthousiaste à l'idée de relever de nouveaux défis.">
+                        Hi! I'm a passionate developer who loves creating innovative solutions. 
+                        I specialize in building web applications, software, and mobile apps that solve real-world problems.
+                        With a strong foundation in multiple programming languages and frameworks, I'm always excited to take on new challenges.
+                    </p>
+                    <p class="about-text" data-en="When I'm not coding, I enjoy learning about new technologies and contributing to open-source projects. I believe in writing clean, maintainable code and creating user experiences that are both functional and delightful."
+                       data-fr="Quand je ne code pas, j'aime apprendre de nouvelles technologies et contribuer à des projets open-source. Je crois en l'écriture de code propre et maintenable et en la création d'expériences utilisateur à la fois fonctionnelles et agréables.">
+                        When I'm not coding, I enjoy learning about new technologies and contributing to open-source projects.
+                        I believe in writing clean, maintainable code and creating user experiences that are both functional and delightful.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="section skills-section" aria-labelledby="skills-title">
+        <div class="container">
+            <h2 id="skills-title" class="section-title" data-en="My Skills" data-fr="Mes compétences">My Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-card" role="article" aria-label="HTML5 programming language skill">
+                    <div class="skill-icon" aria-hidden="true">
+                        <svg viewBox="0 0 100 100" width="60" height="60">
+                            <text x="50" y="55" font-size="40" fill="#E44D26" text-anchor="middle" font-weight="bold">HTML</text>
+                        </svg>
+                    </div>
+                    <h3>HTML5</h3>
+                    <div class="skill-hover-indicator"></div>
+                </div>
+                <div class="skill-card" role="article" aria-label="CSS3 styling language skill">
+                    <div class="skill-icon" aria-hidden="true">
+                        <svg viewBox="0 0 100 100" width="60" height="60">
+                            <text x="50" y="55" font-size="40" fill="#264DE4" text-anchor="middle" font-weight="bold">CSS</text>
+                        </svg>
+                    </div>
+                    <h3>CSS3</h3>
+                    <div class="skill-hover-indicator"></div>
+                </div>
+                <div class="skill-card" role="article" aria-label="JavaScript programming language skill">
+                    <div class="skill-icon" aria-hidden="true">
+                        <svg viewBox="0 0 100 100" width="60" height="60">
+                            <text x="50" y="55" font-size="35" fill="#F7DF1E" text-anchor="middle" font-weight="bold">JS</text>
+                        </svg>
+                    </div>
+                    <h3>JavaScript</h3>
+                    <div class="skill-hover-indicator"></div>
+                </div>
+                <div class="skill-card" role="article" aria-label="Python programming language skill">
+                    <div class="skill-icon" aria-hidden="true">
+                        <svg viewBox="0 0 100 100" width="60" height="60">
+                            <text x="50" y="55" font-size="30" fill="#3776AB" text-anchor="middle" font-weight="bold">Python</text>
+                        </svg>
+                    </div>
+                    <h3>Python</h3>
+                    <div class="skill-hover-indicator"></div>
+                </div>
+                <div class="skill-card" role="article" aria-label="React framework skill">
+                    <div class="skill-icon" aria-hidden="true">
+                        <svg viewBox="0 0 100 100" width="60" height="60">
+                            <text x="50" y="55" font-size="35" fill="#61DAFB" text-anchor="middle" font-weight="bold">React</text>
+                        </svg>
+                    </div>
+                    <h3>React</h3>
+                    <div class="skill-hover-indicator"></div>
+                </div>
+                <div class="skill-card" role="article" aria-label="Node.js runtime environment skill">
+                    <div class="skill-icon" aria-hidden="true">
+                        <svg viewBox="0 0 100 100" width="60" height="60">
+                            <text x="50" y="55" font-size="35" fill="#68A063" text-anchor="middle" font-weight="bold">Node</text>
+                        </svg>
+                    </div>
+                    <h3>Node.js</h3>
+                    <div class="skill-hover-indicator"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="section projects-section" aria-labelledby="projects-title">
+        <div class="container">
+            <h2 id="projects-title" class="section-title" data-en="My Projects" data-fr="Mes projets">My Projects</h2>
+            <div class="projects-grid">
+                <article class="project-card" aria-labelledby="project1-title">
+                    <div class="project-header">
+                        <h3 id="project1-title" class="project-title" data-en="Project Name 1" data-fr="Nom du projet 1">Project Name 1</h3>
+                        <span class="project-type" data-en="Web App" data-fr="App Web" aria-label="Project type: Web Application">Web App</span>
+                    </div>
+                    <p class="project-description" data-en="Description of your amazing web application. Explain what it does, what technologies you used, and what problems it solves."
+                       data-fr="Description de votre incroyable application web. Expliquez ce qu'elle fait, quelles technologies vous avez utilisées et quels problèmes elle résout.">
+                        Description of your amazing web application. Explain what it does, what technologies you used, and what problems it solves.
+                    </p>
+                    <div class="project-tags" aria-label="Technologies used">
+                        <span class="tag">React</span>
+                        <span class="tag">Node.js</span>
+                        <span class="tag">MongoDB</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="#" class="btn btn-primary" data-en="View Demo" data-fr="Voir la démo" aria-label="View live demo of Project 1">View Demo</a>
+                        <a href="#" class="btn btn-secondary" data-en="View Code" data-fr="Voir le code" aria-label="View source code of Project 1">View Code</a>
+                    </div>
+                    <div class="project-hover-indicator"></div>
+                </article>
+
+                <article class="project-card" aria-labelledby="project2-title">
+                    <div class="project-header">
+                        <h3 id="project2-title" class="project-title" data-en="Project Name 2" data-fr="Nom du projet 2">Project Name 2</h3>
+                        <span class="project-type" data-en="Mobile App" data-fr="App Mobile" aria-label="Project type: Mobile Application">Mobile App</span>
+                    </div>
+                    <p class="project-description" data-en="Description of your mobile application. Share the key features and what makes it special or unique."
+                       data-fr="Description de votre application mobile. Partagez les fonctionnalités clés et ce qui la rend spéciale ou unique.">
+                        Description of your mobile application. Share the key features and what makes it special or unique.
+                    </p>
+                    <div class="project-tags" aria-label="Technologies used">
+                        <span class="tag">React Native</span>
+                        <span class="tag">Firebase</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="#" class="btn btn-primary" data-en="View Demo" data-fr="Voir la démo" aria-label="View live demo of Project 2">View Demo</a>
+                        <a href="#" class="btn btn-secondary" data-en="View Code" data-fr="Voir le code" aria-label="View source code of Project 2">View Code</a>
+                    </div>
+                    <div class="project-hover-indicator"></div>
+                </article>
+
+                <article class="project-card" aria-labelledby="project3-title">
+                    <div class="project-header">
+                        <h3 id="project3-title" class="project-title" data-en="Project Name 3" data-fr="Nom du projet 3">Project Name 3</h3>
+                        <span class="project-type" data-en="Software" data-fr="Logiciel" aria-label="Project type: Software">Software</span>
+                    </div>
+                    <p class="project-description" data-en="Description of your software project. Highlight the functionality and the impact it has for users."
+                       data-fr="Description de votre projet logiciel. Mettez en évidence la fonctionnalité et l'impact qu'il a pour les utilisateurs.">
+                        Description of your software project. Highlight the functionality and the impact it has for users.
+                    </p>
+                    <div class="project-tags" aria-label="Technologies used">
+                        <span class="tag">Python</span>
+                        <span class="tag">Qt</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="#" class="btn btn-primary" data-en="View Demo" data-fr="Voir la démo" aria-label="View live demo of Project 3">View Demo</a>
+                        <a href="#" class="btn btn-secondary" data-en="View Code" data-fr="Voir le code" aria-label="View source code of Project 3">View Code</a>
+                    </div>
+                    <div class="project-hover-indicator"></div>
+                </article>
+
+                <article class="project-card" aria-labelledby="project4-title">
+                    <div class="project-header">
+                        <h3 id="project4-title" class="project-title" data-en="Project Name 4" data-fr="Nom du projet 4">Project Name 4</h3>
+                        <span class="project-type" data-en="Web App" data-fr="App Web" aria-label="Project type: Web Application">Web App</span>
+                    </div>
+                    <p class="project-description" data-en="Another exciting project description. Explain the challenges you faced and how you overcame them."
+                       data-fr="Une autre description de projet passionnante. Expliquez les défis auxquels vous avez été confronté et comment vous les avez surmontés.">
+                        Another exciting project description. Explain the challenges you faced and how you overcame them.
+                    </p>
+                    <div class="project-tags" aria-label="Technologies used">
+                        <span class="tag">JavaScript</span>
+                        <span class="tag">API</span>
+                        <span class="tag">CSS</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="#" class="btn btn-primary" data-en="View Demo" data-fr="Voir la démo" aria-label="View live demo of Project 4">View Demo</a>
+                        <a href="#" class="btn btn-secondary" data-en="View Code" data-fr="Voir le code" aria-label="View source code of Project 4">View Code</a>
+                    </div>
+                    <div class="project-hover-indicator"></div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer" role="contentinfo">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3 class="footer-title" data-en="Get In Touch" data-fr="Contactez-moi">Get In Touch</h3>
+                    <div class="contact-links">
+                        <a href="mailto:your-email@example.com" class="contact-link" aria-label="Send email">
+                            <svg class="contact-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                                <polyline points="22,6 12,13 2,6"></polyline>
+                            </svg>
+                            <span>your-email@example.com</span>
+                        </a>
+                        <a href="https://www.linkedin.com/in/your-linkedin-profile" target="_blank" rel="noopener noreferrer" class="contact-link" aria-label="Visit LinkedIn profile (opens in new tab)">
+                            <svg class="contact-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                                <rect x="2" y="9" width="4" height="12"></rect>
+                                <circle cx="4" cy="4" r="2"></circle>
+                            </svg>
+                            <span>LinkedIn</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <p class="footer-copyright" data-en="© 2025 Pierre-Paul G. All rights reserved." data-fr="© 2025 Pierre-Paul G. Tous droits réservés.">&copy; 2025 Pierre-Paul G. All rights reserved.</p>
+                    <p class="footer-domain">pierre-paulg.ca</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Language Toggle Functionality
+        let currentLang = 'en';
+        const langBtn = document.getElementById('langBtn');
+        const langText = document.querySelector('.lang-text');
+
+        function switchLanguage() {
+            currentLang = currentLang === 'en' ? 'fr' : 'en';
+            langText.textContent = currentLang === 'en' ? 'FR' : 'EN';
+            
+            // Update HTML lang attribute for screen readers
+            document.documentElement.lang = currentLang;
+            
+            // Update all elements with data-en and data-fr attributes
+            const elements = document.querySelectorAll('[data-en][data-fr]');
+            elements.forEach(element => {
+                const text = element.getAttribute(`data-${currentLang}`);
+                if (text) {
+                    element.textContent = text;
+                }
+            });
+        }
+
+        langBtn.addEventListener('click', switchLanguage);
+
+        // Smooth scroll with offset for sticky nav
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    const navHeight = document.querySelector('.navbar').offsetHeight;
+                    const targetPosition = target.offsetTop - navHeight;
+                    window.scrollTo({
+                        top: targetPosition,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+
+        // Intersection Observer for section fade-in animations
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -100px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('section-visible');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.section').forEach(section => {
+            observer.observe(section);
+        });
+    </script>
+</body>
+</html>

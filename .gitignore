@@ -1,0 +1,91 @@
+# Operating System Files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+Desktop.ini
+
+# Editor Files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.sublime-project
+.sublime-workspace
+*.code-workspace
+
+# Temporary Files
+*.tmp
+*.temp
+*.log
+*.cache
+
+# Node.js (if you add any tools later)
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+package-lock.json
+yarn.lock
+
+# Environment Variables (if you add any)
+.env
+.env.local
+.env.development
+.env.test
+.env.production
+
+# Build Output (if you add build tools later)
+dist/
+build/
+out/
+.next/
+.nuxt/
+
+# Testing (if you add tests later)
+coverage/
+*.test.js.snap
+.nyc_output/
+
+# Backup Files
+*.bak
+*.backup
+*.old
+
+# Personal Notes (don't commit these)
+TODO.md
+NOTES.md
+notes.txt
+scratch.txt
+
+# Image Processing
+*.psd
+*.ai
+*.sketch
+*.fig
+
+# Archives
+*.zip
+*.tar
+*.gz
+*.rar
+*.7z
+
+# Credentials (NEVER commit these)
+credentials.json
+secrets.json
+*.key
+*.pem
+*.cert
+
+# Cloudinary (if you store config files)
+cloudinary-config.json
+
+# Draft or WIP files
+draft/
+wip/
+scratch/

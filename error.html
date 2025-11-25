@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Error - Pierre-Paul G.</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="error-page.css">
+</head>
+<body>
+    <nav class="navbar" role="navigation" aria-label="Main navigation">
+        <div class="nav-container">
+            <h1 class="logo">Pierre-Paul G.</h1>
+            <div class="nav-right">
+                <ul class="nav-menu">
+                    <li><a href="index.html#about" data-en="About" data-fr="À propos" aria-label="Navigate to about section">About</a></li>
+                    <li><a href="index.html#skills" data-en="Skills" data-fr="Compétences" aria-label="Navigate to skills section">Skills</a></li>
+                    <li><a href="index.html#projects" data-en="Projects" data-fr="Projets" aria-label="Navigate to projects section">Projects</a></li>
+                </ul>
+                <div class="language-toggle">
+                    <button id="langBtn" class="lang-btn" aria-label="Switch between English and French">
+                        <span class="lang-text">FR</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="error-container">
+        <div class="error-content">
+            <!-- Animated Error Icon -->
+            <div class="error-icon-wrapper">
+                <div class="error-icon">
+                    <svg viewBox="0 0 200 200" width="200" height="200" class="error-svg">
+                        <circle cx="100" cy="100" r="80" class="error-circle" fill="none" stroke="#ff6b6b" stroke-width="4"/>
+                        <path d="M 70 70 L 130 130 M 130 70 L 70 130" class="error-x" stroke="#ff6b6b" stroke-width="6" stroke-linecap="round"/>
+                    </svg>
+                </div>
+                <div class="error-code">
+                    <span class="digit">4</span>
+                    <span class="digit">0</span>
+                    <span class="digit">4</span>
+                </div>
+            </div>
+
+            <!-- Error Message -->
+            <h1 class="error-title" data-en="Oops! Something Went Wrong" data-fr="Oups! Une erreur s'est produite">
+                Oops! Something Went Wrong
+            </h1>
+
+            <p class="error-description"
+               data-en="We couldn't find the page you're looking for. It might have been moved, deleted, or perhaps the URL was mistyped."
+               data-fr="Nous n'avons pas trouvé la page que vous cherchez. Elle a peut-être été déplacée, supprimée, ou l'URL est incorrecte.">
+                We couldn't find the page you're looking for. It might have been moved, deleted, or perhaps the URL was mistyped.
+            </p>
+
+            <!-- Action Buttons -->
+            <div class="error-actions">
+                <a href="index.html" class="btn btn-primary" data-en="Go to Homepage" data-fr="Retour à l'accueil">
+                    Go to Homepage
+                </a>
+                <a href="contact.html" class="btn btn-secondary" data-en="Contact Support" data-fr="Contacter le support">
+                    Contact Support
+                </a>
+            </div>
+
+            <!-- Helpful Links -->
+            <div class="helpful-links">
+                <p class="helpful-title" data-en="You might be looking for:" data-fr="Vous cherchez peut-être :">
+                    You might be looking for:
+                </p>
+                <ul class="link-list">
+                    <li><a href="index.html#about" data-en="About Me" data-fr="À propos">About Me</a></li>
+                    <li><a href="index.html#skills" data-en="My Skills" data-fr="Mes compétences">My Skills</a></li>
+                    <li><a href="index.html#projects" data-en="My Projects" data-fr="Mes projets">My Projects</a></li>
+                    <li><a href="contact.html" data-en="Contact" data-fr="Contact">Contact</a></li>
+                </ul>
+            </div>
+
+            <!-- Decorative Elements -->
+            <div class="floating-shapes" aria-hidden="true">
+                <div class="shape shape-1"></div>
+                <div class="shape shape-2"></div>
+                <div class="shape shape-3"></div>
+                <div class="shape shape-4"></div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer" role="contentinfo">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3 class="footer-title" data-en="Get In Touch" data-fr="Contactez-moi">Get In Touch</h3>
+                    <div class="contact-links">
+                        <a href="contact.html" class="contact-link" aria-label="Go to contact form page">
+                            <svg class="contact-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                                <polyline points="22,6 12,13 2,6"></polyline>
+                            </svg>
+                            <span data-en="Contact Form" data-fr="Formulaire de contact">Contact Form</span>
+                        </a>
+                        <a href="https://www.linkedin.com/in/pierre-paul-g-34589a25b/" target="_blank" rel="noopener noreferrer" class="contact-link" aria-label="Visit LinkedIn profile (opens in new tab)">
+                            <svg class="contact-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                                <rect x="2" y="9" width="4" height="12"></rect>
+                                <circle cx="4" cy="4" r="2"></circle>
+                            </svg>
+                            <span>LinkedIn</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <p class="footer-copyright" data-en="© 2025 Pierre-Paul G. All rights reserved." data-fr="© 2025 Pierre-Paul G. Tous droits réservés.">&copy; 2025 Pierre-Paul G. All rights reserved.</p>
+                    <p class="footer-domain">pierre-paulg.ca</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="language.js"></script>
+    <script>
+        // Initialize language from localStorage
+        let currentLang = window.LanguageManager.initializeLanguage();
+
+        // Setup language toggle with persistence
+        currentLang = window.LanguageManager.setupLanguageToggle(currentLang);
+
+        // Add animation on page load
+        window.addEventListener('load', function() {
+            document.querySelector('.error-content').classList.add('loaded');
+        });
+    </script>
+</body>
+</html>

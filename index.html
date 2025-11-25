@@ -205,30 +205,13 @@
         </div>
     </footer>
 
+    <script src="language.js"></script>
     <script>
-        // Language Toggle Functionality
-        let currentLang = 'en';
-        const langBtn = document.getElementById('langBtn');
-        const langText = document.querySelector('.lang-text');
+        // Initialize language from localStorage
+        let currentLang = window.LanguageManager.initializeLanguage();
 
-        function switchLanguage() {
-            currentLang = currentLang === 'en' ? 'fr' : 'en';
-            langText.textContent = currentLang === 'en' ? 'FR' : 'EN';
-            
-            // Update HTML lang attribute for screen readers
-            document.documentElement.lang = currentLang;
-            
-            // Update all elements with data-en and data-fr attributes
-            const elements = document.querySelectorAll('[data-en][data-fr]');
-            elements.forEach(element => {
-                const text = element.getAttribute(`data-${currentLang}`);
-                if (text) {
-                    element.textContent = text;
-                }
-            });
-        }
-
-        langBtn.addEventListener('click', switchLanguage);
+        // Setup language toggle with persistence
+        currentLang = window.LanguageManager.setupLanguageToggle(currentLang);
 
         // Smooth scroll with offset for sticky nav
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {

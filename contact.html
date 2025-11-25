@@ -129,40 +129,22 @@
         </div>
     </footer>
 
+    <script src="language.js"></script>
     <script src="contact-form.js"></script>
     <script>
-        // Language Toggle Functionality
-        let currentLang = 'en';
-        const langBtn = document.getElementById('langBtn');
-        const langText = document.querySelector('.lang-text');
+        // Initialize language from localStorage
+        let currentLang = window.LanguageManager.initializeLanguage();
 
-        function switchLanguage() {
-            currentLang = currentLang === 'en' ? 'fr' : 'en';
-            langText.textContent = currentLang === 'en' ? 'FR' : 'EN';
+        // Setup language toggle with persistence
+        currentLang = window.LanguageManager.setupLanguageToggle(currentLang);
 
-            // Update HTML lang attribute for screen readers
-            document.documentElement.lang = currentLang;
+        // Update contact-form.js to use current language
+        window.currentLang = currentLang;
 
-            // Update all elements with data-en and data-fr attributes
-            const elements = document.querySelectorAll('[data-en][data-fr]');
-            elements.forEach(element => {
-                const text = element.getAttribute(`data-${currentLang}`);
-                if (text) {
-                    element.textContent = text;
-                }
-            });
-
-            // Update placeholders
-            const inputsWithPlaceholder = document.querySelectorAll('[data-placeholder-en][data-placeholder-fr]');
-            inputsWithPlaceholder.forEach(input => {
-                const placeholder = input.getAttribute(`data-placeholder-${currentLang}`);
-                if (placeholder) {
-                    input.placeholder = placeholder;
-                }
-            });
-        }
-
-        langBtn.addEventListener('click', switchLanguage);
+        // Listen for language changes to update contact-form.js
+        window.addEventListener('languageChanged', function(e) {
+            window.currentLang = e.detail.language;
+        });
     </script>
 </body>
 </html>

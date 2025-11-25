@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Pierre-Paul G.</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="contact-form.css">
+</head>
+<body>
+    <nav class="navbar" role="navigation" aria-label="Main navigation">
+        <div class="nav-container">
+            <h1 class="logo"><a href="index.html" style="color: inherit; text-decoration: none;">Pierre-Paul G.</a></h1>
+            <div class="nav-right">
+                <ul class="nav-menu">
+                    <li><a href="index.html#about" data-en="About" data-fr="À propos" aria-label="Navigate to about section">About</a></li>
+                    <li><a href="index.html#skills" data-en="Skills" data-fr="Compétences" aria-label="Navigate to skills section">Skills</a></li>
+                    <li><a href="index.html#projects" data-en="Projects" data-fr="Projets" aria-label="Navigate to projects section">Projects</a></li>
+                    <li><a href="contact.html" class="active" data-en="Contact" data-fr="Contact" aria-label="Navigate to contact page">Contact</a></li>
+                </ul>
+                <div class="language-toggle">
+                    <button id="langBtn" class="lang-btn" aria-label="Switch between English and French">
+                        <span class="lang-text">FR</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <section class="contact-section section section-visible" aria-labelledby="contact-title">
+        <div class="container">
+            <h2 id="contact-title" class="section-title" data-en="Get In Touch" data-fr="Contactez-moi">Get In Touch</h2>
+            <div class="contact-content">
+                <div class="contact-intro">
+                    <p data-en="Have a project in mind or want to discuss an opportunity? Fill out the form below and I'll get back to you as soon as possible."
+                       data-fr="Vous avez un projet en tête ou souhaitez discuter d'une opportunité? Remplissez le formulaire ci-dessous et je vous répondrai dans les plus brefs délais.">
+                        Have a project in mind or want to discuss an opportunity? Fill out the form below and I'll get back to you as soon as possible.
+                    </p>
+                </div>
+
+                <form id="contactForm" class="contact-form" aria-label="Contact form">
+                    <div class="form-group">
+                        <label for="name" data-en="Name *" data-fr="Nom *">Name *</label>
+                        <input
+                            type="text"
+                            id="name"
+                            name="name"
+                            required
+                            aria-required="true"
+                            data-placeholder-en="Your name"
+                            data-placeholder-fr="Votre nom"
+                            placeholder="Your name">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email" data-en="Email *" data-fr="Courriel *">Email *</label>
+                        <input
+                            type="email"
+                            id="email"
+                            name="email"
+                            required
+                            aria-required="true"
+                            data-placeholder-en="your.email@example.com"
+                            data-placeholder-fr="votre.courriel@exemple.com"
+                            placeholder="your.email@example.com">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="subject" data-en="Subject *" data-fr="Sujet *">Subject *</label>
+                        <input
+                            type="text"
+                            id="subject"
+                            name="subject"
+                            required
+                            aria-required="true"
+                            data-placeholder-en="What is this about?"
+                            data-placeholder-fr="De quoi s'agit-il?"
+                            placeholder="What is this about?">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message" data-en="Message *" data-fr="Message *">Message *</label>
+                        <textarea
+                            id="message"
+                            name="message"
+                            rows="6"
+                            required
+                            aria-required="true"
+                            data-placeholder-en="Tell me about your project or inquiry..."
+                            data-placeholder-fr="Parlez-moi de votre projet ou demande..."
+                            placeholder="Tell me about your project or inquiry..."></textarea>
+                    </div>
+
+                    <div class="form-actions">
+                        <button type="submit" class="btn btn-primary" data-en="Send Message" data-fr="Envoyer le message">
+                            <span class="btn-text">Send Message</span>
+                            <span class="btn-loader" aria-hidden="true"></span>
+                        </button>
+                    </div>
+
+                    <div id="formMessage" class="form-message" role="alert" aria-live="polite"></div>
+                </form>
+
+                <div class="alternative-contact">
+                    <p data-en="You can also find me on:" data-fr="Vous pouvez également me trouver sur :">You can also find me on:</p>
+                    <div class="social-links">
+                        <a href="https://www.linkedin.com/in/pierre-paul-g-34589a25b/" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Visit LinkedIn profile (opens in new tab)">
+                            <svg class="social-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                                <rect x="2" y="9" width="4" height="12"></rect>
+                                <circle cx="4" cy="4" r="2"></circle>
+                            </svg>
+                            <span>LinkedIn</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer" role="contentinfo">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <p class="footer-copyright" data-en="© 2025 Pierre-Paul G. All rights reserved." data-fr="© 2025 Pierre-Paul G. Tous droits réservés.">&copy; 2025 Pierre-Paul G. All rights reserved.</p>
+                    <p class="footer-domain">pierre-paulg.ca</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="contact-form.js"></script>
+    <script>
+        // Language Toggle Functionality
+        let currentLang = 'en';
+        const langBtn = document.getElementById('langBtn');
+        const langText = document.querySelector('.lang-text');
+
+        function switchLanguage() {
+            currentLang = currentLang === 'en' ? 'fr' : 'en';
+            langText.textContent = currentLang === 'en' ? 'FR' : 'EN';
+
+            // Update HTML lang attribute for screen readers
+            document.documentElement.lang = currentLang;
+
+            // Update all elements with data-en and data-fr attributes
+            const elements = document.querySelectorAll('[data-en][data-fr]');
+            elements.forEach(element => {
+                const text = element.getAttribute(`data-${currentLang}`);
+                if (text) {
+                    element.textContent = text;
+                }
+            });
+
+            // Update placeholders
+            const inputsWithPlaceholder = document.querySelectorAll('[data-placeholder-en][data-placeholder-fr]');
+            inputsWithPlaceholder.forEach(input => {
+                const placeholder = input.getAttribute(`data-placeholder-${currentLang}`);
+                if (placeholder) {
+                    input.placeholder = placeholder;
+                }
+            });
+        }
+
+        langBtn.addEventListener('click', switchLanguage);
+    </script>
+</body>
+</html>
